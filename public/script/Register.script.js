@@ -10,10 +10,10 @@ registerForm.addEventListener('submit', async (event) => {
     const senha = document.getElementById('senha').value;
 
     if (senha.length < 8) {
-        document.getElementById("alertPassword").textContent = "A senha deve ter pelo menos 8 caracteres";
+        document.getElementById("alertERROR").textContent = "A senha deve ter pelo menos 8 caracteres";
         return;
     } else {
-        document.getElementById("alertPassword").textContent = "";
+        document.getElementById("alertERROR").textContent = "";
     }
 
     try {
@@ -34,7 +34,7 @@ registerForm.addEventListener('submit', async (event) => {
             document.getElementById("usuario").value = "";
             document.getElementById("email").value = "";
             document.getElementById("senha").value = "";
-            document.getElementById("alertPassword").textContent = data.error;
+            document.getElementById("alertERROR").textContent = data.error;
             return;
         }
 
@@ -43,7 +43,7 @@ registerForm.addEventListener('submit', async (event) => {
         window.location.href = '/login';
     } catch (error) {
         console.error('Erro:', error);
-        document.getElementById("alertPassword").textContent = error.message;
+        document.getElementById("alertERROR").textContent = error.message;
     }
 
     console.log('Requisição enviada:', { displayUser: displayUser, user: usuario, email: email, password: senha });
