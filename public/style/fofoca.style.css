@@ -217,6 +217,9 @@ textarea:focus {
 
 
 #backButton {
+    top: 16vh;
+    left: 6vw;
+    position: absolute;
     background-color: #1d9bf0;
     color: white;
     border: none;
@@ -226,7 +229,6 @@ textarea:focus {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-
 #backButton:hover {
     background-color: #1a8cd8;
 }

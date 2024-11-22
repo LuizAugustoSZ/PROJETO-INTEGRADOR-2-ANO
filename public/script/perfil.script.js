@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token');
     const usuarioId = window.location.pathname.split('/perfil/')[1];
 
+    const cadastra = document.getElementById('buttonCriar');
+
     // Elementos do DOM
     const userModal = document.getElementById('user-modal');
     const logoutButton = document.getElementById('logout-button');
@@ -44,8 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const timelineDiv = document.getElementById('timeline-container');
 
+
     // Exibir informações do usuário logado
     if (token) {
+            cadastra.style.display = 'none';
+
         fetch('/usuario-logado', {
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -72,7 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Erro ao obter usuário logado:', error);
             });
     } else {
-        displayUserDiv.textContent = 'Você não está logado';
+            cadastra.style.display = 'block';
+            displayUserDiv.textContent = '';
     }
 
     // Função para carregar informações do perfil

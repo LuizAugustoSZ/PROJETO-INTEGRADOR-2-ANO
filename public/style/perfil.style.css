@@ -23,10 +23,6 @@ nav {
 
 }
 
-a{
-    text-decoration: none;
-}
-
 #user-nav{
     display: flex;
     align-items: center;
@@ -245,6 +241,11 @@ a{
 }
 
 #backButton {
+
+    top: 16vh;
+    left: 6vw;
+    position: absolute;
+    
     background-color: #1d9bf0;
     color: white;
     border: none;
@@ -257,4 +258,31 @@ a{
 
 #backButton:hover {
     background-color: #1a8cd8;
+}
+
+#buttonCriar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #1d9bf0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+#buttonCriar:hover {
+    background-color: #1a8cd8;
+}
+a {
+    display: block; /* ou inline-block */
+    text-decoration: none; /* para garantir que não tenha sublinhado */
 }
