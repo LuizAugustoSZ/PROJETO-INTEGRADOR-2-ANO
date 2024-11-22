@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORZH</title>
+
+    <!-- css da timeline -->
+    <link rel="stylesheet" href="/style/Timeline.style.css">
+    <!-- conexão com Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+
+    <div id="overlay"></div>
+    <nav>
+        <div id="user-nav">
+                <div id="user-icon" class="bi bi-person-circle"></div>
+                <div id="mostraUsuario" class="user-specs">
+                    <div id='nav-display' class='display'></div>
+                    <div id='nav-user' class='user'></div>
+                </div>
+        </div>
+        <!-- <div id="logout-button" class="bi bi-box-arrow-left"></div> -->
+    </nav>
+
+    <div id="user-modal">
+        <div id="user-modal-content">
+            <a id="user-modal-content-profile">Perfil</a>
+            <a>Adicionar conta existente</a>
+            <a id="logout-button">Sair</a>
+        </div>
+    </div>
+
+    <div id="creation-modal">
+        <div id="creation-modal-content">
+
+            <div id="creation-modal-content-user">
+                <div id="creation-modal-content-user-content">
+                    <div id="creation-user-icon" class="bi bi-person-circle"></div>
+                    <div class="user-specs">
+                        <div id="creation-display" class="display"></div>
+                        <div id="creation-user" class="user"></div>
+                    </div>  
+                </div>
+            </div>
+
+        <div id="creation-modal-content-close" class="bi bi-x"></div>
+            
+            
+                <!-- conteúdo -->
+                <textarea id="creation-modal-content-fofoca-content"></textarea>
+           
+             <!-- botão para postar -->
+            <div id="creation-modal-content-post">
+                <div id="creation-modal-content-post-content">Postar</div>
+            </div>
+
+
+        </div>   
+    </div>
+    
+    <!-- botão para criação de fofoca -->
+        <div id="buttonCriar" class="bi bi-plus"></div>
+    
+
+    <!-- div da timeline -->
+        <div id="timeline"></div>
+
+    <!-- conexão com o script que carregará as fofocas -->
+    <script src="/script/Timeline.script.js"></script>
+</body>
+</html>

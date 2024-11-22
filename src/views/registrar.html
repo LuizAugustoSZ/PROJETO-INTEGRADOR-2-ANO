@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORZH</title>
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="/public/style/reset.css">
+    <link rel="stylesheet" href="/style/Register.style.css">
+</head>
+<body>
+    <h2>Cadastrar Conta</h2>
+
+    <form id="registerForm">
+
+        <label for="displayUser">Nome:</label><br>
+        <input type="text" name="displayUser" id="displayUser" required><br>
+        
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" name="usuario" id="usuario" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha" required><br>
+
+        <p id="alertERROR"></p>
+        
+        <button type="submit" id="cadastroButton"><p id="buttonContent">Cadastrar</p></button>
+        <a href="/login">Já tem uma conta? Faça login</a>
+        <a href="/fofocas/convidado">Entrar como convidado</a>
+    </form>
+
+   
+
+    <script src="/script/Register.script.js"></script>
+</body>
+</html>

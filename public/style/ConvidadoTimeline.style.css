@@ -1,0 +1,164 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f1f5f9;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#timeline {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 1.5rem;
+    margin-top: 15vh;
+
+}
+
+.fofoca {
+    width: 90%;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: none;
+    transition: background-color 0.3s ease;
+    padding: 0.7rem;
+    word-wrap: break-word;
+}
+
+.fofoca:hover {
+    background-color: #f1efef
+}
+
+
+
+
+
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    color: #1d9bf0;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #e8f5fd;
+}
+
+#buttonCriar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #1d9bf0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+#buttonCriar:hover {
+    background-color: #1a8cd8;
+}
+
+#buttonCriar i {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+/* fofoca */
+
+
+nav {
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    height: 13vh; 
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.user-specs{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: flex-start;
+}
+
+.user{
+    font-size: 1rem;
+    color: gray;
+   
+}
+
+.display{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1d9bf0; 
+
+}
+
+.description{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+
+
+    background-color: none;
+    padding: 0px;
+    color: black;
+}
+
+.date{
+    color: gray;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+@media (max-width: 600px){
+    #timeline{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+    #timeline{
+        width: 80%;
+
+    }
+}
