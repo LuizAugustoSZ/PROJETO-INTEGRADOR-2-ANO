@@ -183,63 +183,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-
-
-@media (max-width: 600px){
-    #timeline-container{
-        width: 100%;
-    }
-
-    #usuario-expandido{
-        width: 100%;
-    }
-
-    .display{
-        font-size: 0.9rem;
-    }
-
-    .user{
-        font-size: 0.9rem;
-    }
-
-    .description{
-        font-size: 1.1;
-    }
-
-    .date{
-        font-size: 0.8rem;
-    }
-
-
-}
-
-@media (min-width: 600px) and (max-width: 1000px){
-
-    #usuario-expandido{
-        width: 80%;
-    }
-    #timeline-container{
-        width: 80%;
-
-    }
-
-    .display{
-        font-size: 1rem;
-    }
-
-    .user{
-        font-size: 1rem;
-    }
-
-    .description{
-        font-size: 1.2;
-    }
-
-    .date{
-        font-size: 0.9rem;
-    }
-}
-
 #backButton {
 
     top: 16vh;
@@ -286,3 +229,72 @@ a {
     display: block; /* ou inline-block */
     text-decoration: none; /* para garantir que não tenha sublinhado */
 }
+
+
+@media (max-width: 600px){
+    #timeline-container{
+        width: 100%;
+    }
+
+    #usuario-expandido{
+        width: 100%;
+        margin-top: 25vh;
+    }
+
+    #backButton{
+        left: 2%;
+    }
+    
+
+    .display{
+        font-size: 0.9rem;
+    }
+
+    .user{
+        font-size: 0.9rem;
+    }
+
+    .description{
+        font-size: 1.1;
+    }
+
+    .date{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+    #usuario-expandido{
+        width: 80%;
+        margin-top: 25vh;
+    }
+    #timeline-container{
+        width: 80%;
+
+    }
+    #backButton{
+        left: 11%;
+    }
+
+    .display{
+        font-size: 1rem;
+    }
+
+    .user{
+        font-size: 1rem;
+    }
+
+    .description{
+        font-size: 1.2;
+    }
+
+    .date{
+        font-size: 0.9rem;
+    }
+}
+
+
+

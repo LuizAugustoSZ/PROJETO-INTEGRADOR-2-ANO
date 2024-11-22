@@ -430,6 +430,11 @@ textarea:focus {
     #form{
         width: 100%;
     }
+
+    #backButton{
+        left: 2%;
+    }
+    
 }
 
 /* responsividade de tablet */
@@ -441,6 +446,11 @@ textarea:focus {
         width: 80%;
 
     }
+
+    #backButton{
+        left: 11%;
+    }
+
 
     .display{
         font-size: 1rem;
