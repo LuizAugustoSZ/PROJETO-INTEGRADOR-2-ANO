@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => {
                 console.error('Erro ao obter usuário logado:', error);
-                displayUserDiv.textContent = 'Erro ao obter usuário logado';
             });
     } else {
         displayUserDiv.textContent = 'Você não está logado';
