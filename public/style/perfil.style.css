@@ -55,6 +55,7 @@ nav {
     border: 1px solid #e0e0e0;
     border-radius: 0.4rem;
     display: none;
+    
 }
 
 #user-modal-content{
@@ -71,8 +72,10 @@ nav {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3rem;
+
+    width: 9rem;
 }
 
 

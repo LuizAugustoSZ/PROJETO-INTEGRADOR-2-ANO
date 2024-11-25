@@ -118,6 +118,7 @@ nav {
 #user-modal{
     z-index: 1001;
     background-color: #fff;
+    
    
 
     position: fixed;
@@ -143,8 +144,10 @@ nav {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3rem;
+
+    width: 9rem;
 }
 
 
@@ -297,6 +300,10 @@ nav {
         width: 100%;
     }
 
+    #creation-modal{
+        width: 80%;
+    }
+
     .display{
         font-size: 0.9rem;
     }
@@ -320,6 +327,10 @@ nav {
     #timeline{
         width: 80%;
 
+    }
+
+    #creation-modal{
+        width: 80%;
     }
 
     .display{
